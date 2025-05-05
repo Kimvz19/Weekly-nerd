@@ -1,0 +1,101 @@
+/* Custom properties */
+:root{
+
+    /* kleuren */
+    --grey-light: #f5f5f5;
+    --grey-light2: #ddd;
+    --grey-light3: #f8f8f8;
+    --white: #ffffff;
+
+    --red: #ff605c;
+    --yellow: #ffbd44;
+    --green: #00ca4e;
+
+
+
+    /* Fonts */
+}
+/* Fonts */
+
+/* General styling */
+ol, ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--grey-light);
+}
+
+
+/* container - omslag mapje */
+.container{
+      width: 90%;
+  max-width: 1200px;
+  height: 90vh;
+  margin: 40px auto;
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.top-section{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--grey-light2);
+    background: var(--grey-light3);
+    position: relative;
+    gap: 250px;
+
+    ul{
+        display: flex;
+        gap: 10px;
+    }
+
+    li{
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+
+        &:nth-child(1){
+            background: var(--red);
+        }
+
+        &:nth-child(2){
+            background: var(--yellow);
+        }
+
+        &:nth-child(3){
+            background: var(--green);
+        }
+
+        p{
+          display: none;
+        }
+    }
+}
+
+/* content */
+.content{
+    display: flex;
+    height: 100%;
+}
+
+.sidebar{
+    width: 220px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    font-size: 14px;
+}
