@@ -11,15 +11,11 @@
     --yellow: #ffbd44;
     --green: #00ca4e;
 
-
-
     /* Fonts */
-    --main-font : "Montserrat", sans-serif;
+    --main-font: "Montserrat", sans-serif;
 }
 
 /* Fonts */
-
-/* General styling */
 ol,
 ul {
     list-style: none;
@@ -34,22 +30,60 @@ body {
     padding: 0;
     background-color: var(--grey-light);
     font-family: var(--main-font);
+    overflow-x: hidden;
+}
+
+
+/* Maps */
+.maps {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    height: 100vh;
+    align-items: center;
+    gap: 25px;
+}
+
+
+/* navigatie map carousel  */
+.carousel-dots {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.carousel-dots .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+    background-color: #333;
 }
 
 
 /* container - omslag mapje */
 .container {
-    width: 90%;
-    max-width: 1200px;
+    flex: 0  0 98vw;
+    scroll-snap-align: center;
     height: 90vh;
-    margin: 40px auto;
     background: var(--white);
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
     overflow: auto;
+    margin: 25px;
 }
 
 
@@ -167,19 +201,20 @@ body {
 
 
 /* Main content */
-.main-content {
+.main-content,
+.main-content2
+ {
     flex-grow: 1;
     background-color: white;
 
-
-    h2, p{
+    h2,
+    p {
         margin-left: 25px;
         margin-top: 25px;
         font-size: 20px;
         color: #333;
         font-weight: 600;
     }
-
 
     article {
         display: flex;
@@ -192,22 +227,51 @@ body {
 
         &:hover {
             transform: scale(1.05);
-          }
-
-        img{
-                width: 80px;
-                height: 80px;
-                object-fit: contain;
         }
 
-        h3{
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        h3 {
             margin-top: 8px;
             font-size: 13px;
             color: #333;
             font-weight: 400;
         }
     }
-      
+
+}
+
+
+.main-content2{
+    p:nth-of-type(1),
+    p:nth-of-type(2),
+    p:nth-of-type(3){
+      background-color: lightblue;
+      width: 300px;
+      border-radius: 20px;
+      padding: 8px 10px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    p:nth-of-type(4),
+    p:nth-of-type(5),
+    p:nth-of-type(6){
+      background-color: lightgreen;
+      width: 300px;
+      border-radius: 20px;
+      padding: 8px 10px;
+      text-align: center;
+      font-size: 15px;
+    }
+    .folders {
+        display: flex;
+        gap: 5px;
+    }
 }
 
 .folders {
@@ -219,7 +283,6 @@ body {
 
 
 /* Popover op article */
-
 #my-popover {
     background: #333;
     color: white;
@@ -232,5 +295,6 @@ body {
     left: 0;
     right: 0;
     margin: 0 auto;
-  }
-  
+}
+
+
