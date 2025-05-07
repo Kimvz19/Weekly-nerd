@@ -23,6 +23,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 body {
@@ -73,7 +74,7 @@ body {
 
 /* container - omslag mapje */
 .container {
-    flex: 0  0 98vw;
+    flex: 0 0 98vw;
     scroll-snap-align: center;
     height: 90vh;
     background: var(--white);
@@ -202,8 +203,7 @@ body {
 
 /* Main content */
 .main-content,
-.main-content2
- {
+.main-content2 {
     flex-grow: 1;
     background-color: white;
 
@@ -242,38 +242,58 @@ body {
 
 
 .main-content2,
-.main-content3{
+.main-content3 {
+
     p:nth-of-type(1),
     p:nth-of-type(2),
-    p:nth-of-type(3){
-      background-color: lightblue;
-      width: 500px;
-      border-radius: 20px;
-      padding: 8px 10px;
-      text-align: center;
-      font-size: 15px;
+    p:nth-of-type(3) {
+        background-color: lightblue;
+        width: 500px;
+        border-radius: 20px;
+        padding: 8px 10px;
+        text-align: center;
+        font-size: 15px;
     }
 
     p:nth-of-type(4),
     p:nth-of-type(5),
-    p:nth-of-type(6){
-      background-color: lightgreen;
-      width: 500px;
-      border-radius: 20px;
-      padding: 8px 10px;
-      text-align: center;
-      font-size: 15px;
+    p:nth-of-type(6) {
+        background-color: lightgreen;
+        width: 500px;
+        border-radius: 20px;
+        padding: 8px 10px;
+        text-align: center;
+        font-size: 15px;
     }
+
     .folders {
         display: flex;
         gap: 5px;
     }
 }
 
-.main-content3{
+.folders {
+
+    li {
+        margin: 20px;
+    }
+
+    a {
+        margin-left: 3px;
+        background-color: lightpink;
+        width: 500px;
+        border-radius: 20px;
+        padding: 8px 10px;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.main-content3 {
+
     p:nth-of-type(1),
-    p:nth-of-type(2)
-    {
+    p:nth-of-type(2) {
         background-color: lightpink;
         width: 800px;
         border-radius: 20px;
@@ -290,7 +310,7 @@ body {
     gap: 30px;
     padding: 15px;
 
-    button{
+    button {
         background-color: lightgreen;
         border-radius: 20px;
         border: none;
@@ -314,13 +334,13 @@ body {
     border: 1px solid #ccc;
     border-radius: 8px;
     background: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     width: 800px;
-  }
+}
 
 
-  /* informatie weekly nerd */
-  .informatie {
+/* informatie weekly nerd */
+.informatie {
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     font-family: Arial, sans-serif;
@@ -328,39 +348,37 @@ body {
     color: #333;
     text-align: left;
     overflow: auto;
-  }
-  
-  .informatie h2 {
+}
+
+.informatie h2 {
     margin-top: 0;
     font-size: 1.5rem;
     color: #222;
-  }
-  
-  .informatie h3 {
+}
+
+.informatie h3 {
     margin-top: 1.2rem;
     font-size: 1.2rem;
     color: #444;
-  }
-  
-  .informatie ul {
+}
+
+.informatie ul {
     padding-left: 1.2rem;
     margin-top: 0.5rem;
-  }
-  
-  .informatie li {
+}
+
+.informatie li {
     margin-bottom: 0.4rem;
-  }
-  
-  .informatie a {
+}
+
+.informatie a {
     color: #0066cc;
     text-decoration: underline;
-  }
-  
-  .informatie code {
+}
+
+.informatie code {
     background: #f4f4f4;
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     font-size: 0.9rem;
-  }
-  
-
+}
