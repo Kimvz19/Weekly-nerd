@@ -315,7 +315,52 @@ body {
     border-radius: 8px;
     background: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    width: 500px;
+    width: 800px;
   }
 
+
+  /* informatie weekly nerd */
+  .informatie {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    color: #333;
+    text-align: left;
+    overflow: auto;
+  }
+  
+  .informatie h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #222;
+  }
+  
+  .informatie h3 {
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  .informatie ul {
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .informatie li {
+    margin-bottom: 0.4rem;
+  }
+  
+  .informatie a {
+    color: #0066cc;
+    text-decoration: underline;
+  }
+  
+  .informatie code {
+    background: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
 
