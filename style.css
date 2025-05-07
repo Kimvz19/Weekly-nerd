@@ -241,7 +241,8 @@ body {
 }
 
 
-.main-content2{
+.main-content2,
+.main-content3{
     p:nth-of-type(1),
     p:nth-of-type(2),
     p:nth-of-type(3){
@@ -268,6 +269,20 @@ body {
         gap: 5px;
     }
 }
+
+.main-content3{
+    p:nth-of-type(1),
+    p:nth-of-type(2)
+    {
+        background-color: lightpink;
+        width: 800px;
+        border-radius: 20px;
+        padding: 8px 10px;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
 
 .folders {
     display: flex;
