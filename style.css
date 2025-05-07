@@ -246,7 +246,7 @@ body {
     p:nth-of-type(2),
     p:nth-of-type(3){
       background-color: lightblue;
-      width: 300px;
+      width: 500px;
       border-radius: 20px;
       padding: 8px 10px;
       text-align: center;
@@ -257,7 +257,7 @@ body {
     p:nth-of-type(5),
     p:nth-of-type(6){
       background-color: lightgreen;
-      width: 300px;
+      width: 500px;
       border-radius: 20px;
       padding: 8px 10px;
       text-align: center;
@@ -283,7 +283,6 @@ body {
         text-align: center;
         font-size: 15px;
         transition: transform 0.2s ease;
-        poi
 
         &:hover {
             transform: scale(1.05);
@@ -292,23 +291,6 @@ body {
     }
 
 }
-
-
-/* Popover op article */
-#my-popover {
-    background: #333;
-    color: white;
-    font-weight: 400;
-    padding: 1rem;
-    max-width: 200px;
-    line-height: 1.4;
-    position: absolute;
-    top: 1rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
-
 
 /* popover */
 
