@@ -223,11 +223,6 @@ body {
         width: 100px;
         text-align: center;
         cursor: pointer;
-        transition: transform 0.2s ease;
-
-        &:hover {
-            transform: scale(1.05);
-        }
 
         img {
             width: 80px;
@@ -279,6 +274,23 @@ body {
     flex-wrap: wrap;
     gap: 30px;
     padding: 15px;
+
+    button{
+        background-color: lightgreen;
+        border-radius: 20px;
+        border: none;
+        padding: 5px 9px;
+        text-align: center;
+        font-size: 15px;
+        transition: transform 0.2s ease;
+        poi
+
+        &:hover {
+            transform: scale(1.05);
+            background-color: lightpink;
+        }
+    }
+
 }
 
 
@@ -296,5 +308,17 @@ body {
     right: 0;
     margin: 0 auto;
 }
+
+
+/* popover */
+
+[popover] {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    max-width: 250px;
+  }
 
 
