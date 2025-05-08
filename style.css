@@ -76,7 +76,7 @@ body {
 .container {
     flex: 0 0 98vw;
     scroll-snap-align: center;
-    height: 90vh;
+    height: 98vh;
     background: var(--white);
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -268,7 +268,7 @@ body {
 
     .folders {
         display: flex;
-        gap: 5px;
+
     }
 }
 
@@ -307,7 +307,7 @@ body {
 .folders {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 25px;
     padding: 15px;
 
     button {
